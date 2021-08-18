@@ -1,0 +1,10 @@
+const string='大家好'
+let n=1
+demo.innerHTML=string.substr(from:0,n)
+console.log(n);
+
+setInterval(handler:()=>{
+    n+=1
+    console.log(string.substr(from:0,n))
+    demo.innerHTML=string.substr(from:0,n)
+},timeout:300)

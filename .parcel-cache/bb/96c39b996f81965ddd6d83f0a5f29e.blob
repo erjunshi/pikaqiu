@@ -1,0 +1,81 @@
+var _cssJs = require('./css.js');
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _cssJsDefault = _parcelHelpers.interopDefault(_cssJs);
+const demo = document.querySelector('#demo');
+const demo2 = document.querySelector('#demo2');
+let n = 1;
+let time = 100;
+let id;
+console.log(n);
+const player = {
+  init: () => {
+    demo.innerText = _cssJsDefault.default.substr(0, n);
+    demo2.innerHTML = _cssJsDefault.default.substr(0, n);
+    player.play();
+    player.bindEvents();
+  },
+  events: {
+    '#btnPause': 'pause',
+    '#btnPlay': 'play',
+    '#btnSlow': 'slow',
+    '#btnNormal': 'normal',
+    '#btnFast': 'fast'
+  },
+  bindEvents: () => {
+    // const events= {
+    // '#btnPause': player.pause,
+    // '#btnPlay': player.play,
+    // '#btnSlow': player.slow,
+    // '#btnNormal': player.normal,
+    // '#btnFast': player.fast
+    // }
+    for (let key in player.events) {
+      // const value = hashTable[key]
+      // document.querySelector(key).onclick=value
+      if (player.events.hasOwnProperty(key)) {
+        const value = player.events[key];
+        document.querySelector(key).onclick = player[value];
+      }
+    }
+  },
+  // document.querySelector('#btnPause').onclick=player.pause
+  // document.querySelector('#btnPlay').onclick=player.play
+  // document.querySelector('#btnSlow').onclick= player.slow
+  // document.querySelector('#btnNormal').onclick= player.normal
+  // document.querySelector('#btnFast').onclick=player.fast
+  // },
+  run: () => {
+    n += 1;
+    if (n > _cssJsDefault.default.length) {
+      window.clearInterval(id);
+      return;
+    }
+    console.log(n + ':' + _cssJsDefault.default.substr(0, n));
+    demo.innerText = _cssJsDefault.default.substr(0, n);
+    demo2.innerHTML = _cssJsDefault.default.substr(0, n);
+    demo.scrollTop = demo.scrollHeight;
+  },
+  play: () => {
+    // return setInterval(player.run,time)
+    id = setInterval(player.run, time);
+  },
+  pause: () => {
+    window.clearInterval(id);
+  },
+  slow: () => {
+    player.pause();
+    time = 200;
+    player.play();
+  },
+  normal: () => {
+    player.pause();
+    time = 100;
+    player.play();
+  },
+  fast: () => {
+    player.pause();
+    time = 0;
+    player.play();
+  }
+};
+player.init();

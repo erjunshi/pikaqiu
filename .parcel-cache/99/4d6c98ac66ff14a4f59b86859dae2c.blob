@@ -1,0 +1,20 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+*::after,*::before{box-sizing: border-box;}
+
+.skin{
+    background-color: #fee433;
+    height: 100vh;
+}
+.nose{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px;
+    border-color: black transparent transparent;
+    border-radius: 11px;
+    position: absolute;
+    left: 50%;
+    top: 220px;
+    margin-left: -10px;
+}
+/*# sourceMappingURL=index.HASH_REF_f0918a547ace1733ebc251b0de60a1d7.css.map */

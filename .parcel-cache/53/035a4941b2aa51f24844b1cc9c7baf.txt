@@ -1,0 +1,22 @@
+21
+59C:\Users\qiang\Desktop\pikachu2\dist\index.de60a1d7.css.map132716668410335136 0
+37C:\Users\qiang\Desktop\pikachu2\.idea132719367559850343 1
+45C:\Users\qiang\Desktop\pikachu2\src\style.css132716666006388478 0
+36C:\Users\qiang\Desktop\pikachu2\dist132719367500288506 1
+35C:\Users\qiang\Desktop\pikachu2\src132719367498697429 1
+43C:\Users\qiang\Desktop\pikachu2\src\main.js132707402362063312 0
+42C:\Users\qiang\Desktop\pikachu2\src\css.js132716694705828726 0
+46C:\Users\qiang\Desktop\pikachu2\src\index.html132708326933872618 0
+45C:\Users\qiang\Desktop\pikachu2\src\test.html132716691207420643 0
+43C:\Users\qiang\Desktop\pikachu2\src\test.js132719367498697429 0
+54C:\Users\qiang\Desktop\pikachu2\dist\index.bd78eeec.js132716668410275196 0
+58C:\Users\qiang\Desktop\pikachu2\dist\index.bd78eeec.js.map132716668410335136 0
+55C:\Users\qiang\Desktop\pikachu2\dist\index.de60a1d7.css132716668410285184 0
+47C:\Users\qiang\Desktop\pikachu2\dist\index.html132716668410295450 0
+53C:\Users\qiang\Desktop\pikachu2\dist\test.15efcf68.js132719367500248557 0
+57C:\Users\qiang\Desktop\pikachu2\dist\test.15efcf68.js.map132719367500278485 0
+46C:\Users\qiang\Desktop\pikachu2\dist\test.html132719367500248557 0
+48C:\Users\qiang\Desktop\pikachu2\.idea\.gitignore132707402507931216 0
+49C:\Users\qiang\Desktop\pikachu2\.idea\modules.xml132707402506230843 0
+50C:\Users\qiang\Desktop\pikachu2\.idea\pikachu2.iml132707402506095518 0
+51C:\Users\qiang\Desktop\pikachu2\.idea\workspace.xml132719367559840420 0

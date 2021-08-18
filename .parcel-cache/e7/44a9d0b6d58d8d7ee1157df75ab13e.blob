@@ -1,0 +1,171 @@
+const string='*{margin: 0;padding: 0;box-sizing: border-box;}\n' +
+    '*::after,*::before{box-sizing: border-box;}\n' +
+    '\n' +
+    '.skin{\n' +
+    '    background-color: #fee433;\n' +
+    '    height: 100vh;\n' +
+    '    position: relative;\n' +
+    '}\n' +
+    '.nose{\n' +
+    '    width: 0;\n' +
+    '    height: 0;\n' +
+    '    border-style: solid;\n' +
+    '    border-width: 12px;\n' +
+    '    border-color: black transparent transparent;\n' +
+    '    border-radius: 11px;\n' +
+    '    position: absolute;\n' +
+    '    left: 50%;\n' +
+    '    top: 220px;\n' +
+    '    margin-left: -10px;\n' +
+    '}\n' +
+    '@keyframes wave {\n' +
+    '    0%{\n' +
+    '        transform: rotate(0deg);\n' +
+    '    }\n' +
+    '    33%{\n' +
+    '        transform: rotate(5deg);\n' +
+    '    }\n' +
+    '    66%{\n' +
+    '        transform: rotate(-5deg);\n' +
+    '    }\n' +
+    '    100%{\n' +
+    '        transform: rotate(0deg);\n' +
+    '    }\n' +
+    '}\n' +
+    '.nose:hover{\n' +
+    '    animation: wave 300ms infinite linear;\n' +
+    '}\n' +
+    '.eye{\n' +
+    '    border: 2px solid black;\n' +
+    '    width: 64px;\n' +
+    '    height: 64px;\n' +
+    '    background: #2e2e2e;\n' +
+    '    position: absolute;\n' +
+    '    border-radius: 50%;\n' +
+    '    top: 180px;\n' +
+    '}\n' +
+    '.eye.left{\n' +
+    '    right: 50%;\n' +
+    '    transform: translateX(-100px);\n' +
+    '}\n' +
+    '.eye.right{\n' +
+    '    left: 50%;\n' +
+    '    transform: translateX(100px);\n' +
+    '}\n' +
+    '.eye::before{\n' +
+    '    content: \'\';\n' +
+    '    display: block;\n' +
+    '    border: 3px solid #000;\n' +
+    '    background: white;\n' +
+    '    width: 30px;\n' +
+    '    height: 30px;\n' +
+    '    border-radius: 50%;\n' +
+    '    position:relative;\n' +
+    '    left: 6px;\n' +
+    '    top: 1px;\n' +
+    '}\n' +
+    '\n' +
+    '.face{\n' +
+    '    border: 2px solid black;\n' +
+    '    width: 70px;\n' +
+    '    height: 70px;\n' +
+    '    background: #ff0000;\n' +
+    '    border-radius: 50%;\n' +
+    '    position: absolute;\n' +
+    '    top: 330px;\n' +
+    '}\n' +
+    '.face.left {\n' +
+    '    right: 50%;\n' +
+    '    margin-right: 150px;\n' +
+    '}\n' +
+    '.face.right{\n' +
+    '    left: 50%;\n' +
+    '    margin-left: 150px;\n' +
+    '}\n' +
+    '.mouth.up{\n' +
+    '    width: 80px;\n' +
+    '    height: 25px;\n' +
+    '    position:relative;\n' +
+    '    top: -5px;\n' +
+    '    left: 50%;\n' +
+    '    background: #fde348;\n' +
+    '    border: 1px solid black;\n' +
+    '    z-index: 1;\n' +
+    '}\n' +
+    '.mouth.up.lip.left{\n' +
+    '    /*right:50%;*/\n' +
+    '    border: 2px solid black;\n' +
+    '    border-bottom-left-radius: 40px 25px;\n' +
+    '    border-top: none;\n' +
+    '    border-right: none;\n' +
+    '    transform: rotate(-20deg);\n' +
+    '    position:absolute;\n' +
+    '    margin-left: -80px;\n' +
+    '\n' +
+    '}\n' +
+    '.mouth.up.lip.right{\n' +
+    '    border: 2px solid black;\n' +
+    '    border-bottom-right-radius: 40px 25px;\n' +
+    '    border-top: none;\n' +
+    '    border-left: none;\n' +
+    '    transform: rotate(20deg);\n' +
+    '    position:absolute;\n' +
+    '    margin-left:3px;\n' +
+    '}\n' +
+    '.mouth{\n' +
+    '    width: 200px;\n' +
+    '    height: 300px;\n' +
+    '    position: absolute;\n' +
+    '    left: 50%;\n' +
+    '    top: 280px;\n' +
+    '    margin-left: -100px;\n' +
+    '    /*border: 1px solid red;*/\n' +
+    '    /*background:  #9b000a;*/\n' +
+    '}\n' +
+    '.mouth .down{\n' +
+    '    height: 180px;\n' +
+    '    position: absolute;\n' +
+    '    top: 5px;\n' +
+    '    width: 100%;\n' +
+    '    overflow: hidden;\n' +
+    '    /*border: 1px solid black;*/\n' +
+    '    /*background:  #9b000a;*/\n' +
+    '}\n' +
+    '.mouth .down .yuan1{\n' +
+    '    border: 3px solid black;\n' +
+    '    width: 150px;\n' +
+    '    height: 1000px;\n' +
+    '    position: absolute;\n' +
+    '    bottom: 0;\n' +
+    '    left: 50%;\n' +
+    '    margin-left: -75px;\n' +
+    '    border-radius: 75px/300px;\n' +
+    '    background: #9b000a;\n' +
+    '    overflow: hidden;\n' +
+    '}\n' +
+    '.mouth .down .yuan1 .yuan2{\n' +
+    '    width: 200px;\n' +
+    '    height: 300px;\n' +
+    '    background: #ff485f;\n' +
+    '    position: absolute;\n' +
+    '    bottom: -155px;\n' +
+    '    left: 50%;\n' +
+    '    margin-left: -100px;\n' +
+    '    border-radius: 100px;\n' +
+    '\n' +
+    '}'
+let n=1
+demo.innerText=string.substr(0,n)
+demo2.innerHTML=string.substr(0,n)
+console.log(n);
+
+
+let id= setInterval(()=>{
+    n+=1
+    if(n>string.length){
+        window.clearInterval(id)
+        return
+    }
+    console.log(n+':'+string.substr(0,n))
+    demo.innerHTML=string.substr(0,n)
+},500)
